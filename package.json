@@ -4,6 +4,11 @@
     "description": "Personal homepage to play around with.",
     "main": "app.js",
     "author": "Vaughn Kottler",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vkottler/personal-homepage"
+    },
     "dependencies": {
         "angular": "^1.5.8",
         "angular-animate": "^1.5.8",

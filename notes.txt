@@ -1,0 +1,20 @@
+Technologies to use:
+Angular with Angular-Material
+
+Books:
+Frontend: CSS Secrets
+
+
+Things to Include
+
+Books that I own
+Dynamic Resume
+Current Projects
+Things I like (Music, video games)
+favorite electronics / Tech
+engineering things!
+
+TODO:
+
+Gather images / icons
+set up a theme
