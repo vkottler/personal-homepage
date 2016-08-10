@@ -16,9 +16,30 @@
 
     </head>
 
-    <body ng-app="myHomepage" ng-cloak>
+    <body ng-app="myHomepage" ng-cloak layout="column">
 
-      <img src="img/hack_illi.jpg" alt="Hack Illinois">
+        <md-content class="md-padding">
+            <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+                <md-nav-item md-nav-click="goto('page1')" name="page1">Home</md-nav-item>
+                <md-nav-item md-nav-click="goto('page2')" name="page2">Resume</md-nav-item>
+                <md-nav-item md-nav-click="goto('page3')" name="page3">Projects</md-nav-item>
+                <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
+                <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
+                <md-nav-item md-nav-href="#page5" name="page5">Page Five</md-nav-item>
+                -->
+            </md-nav-bar>
+            <span>{{currentNavItem}}</span>
+        </md-content>
+
+        <div id="slideshow-container" layout="row">
+            <div hide show-gt-md flex="20"></div>
+            <div id="slideshow" flex>
+                <div id="slideshow-inner">
+                    Hey
+                </div>
+            </div>
+            <div hide show-gt-md flex="20"></div>
+        </div>
 
     <!-- Dependencies -->
     <script src="node_modules/angular/angular.js"></script>

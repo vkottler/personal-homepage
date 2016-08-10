@@ -4,8 +4,10 @@ angular.module('myHomepage', ['ngMaterial'])
 
     // Theme
     $mdThemingProvider.theme('default')
-    .primaryPalette('blue-grey')
-    .accentPalette('grey');
+    .primaryPalette('light-blue')
+    .accentPalette('blue')
+    .warnPalette('teal')
+    .backgroundPalette('grey');
 
     // Icons
 
@@ -13,4 +15,8 @@ angular.module('myHomepage', ['ngMaterial'])
 
 .controller('mainController', function($scope) {
 
+    var images = [];
+
+    $scope.currImage = "img/hack_illi.jpg";
+    $scope.currentNavItem = "notImplemented";
 });
