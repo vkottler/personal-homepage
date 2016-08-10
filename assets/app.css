@@ -2,32 +2,22 @@ html {
     font-family: 'Ubuntu', sans-serif;
 }
 
-body {
-    /* Temporary */
-    background-color: black;
-}
-
 .monoFont {
     font-family: 'Ubuntu Mono';
 }
 
-#slideshow-container {
-    height: 30em;
-    background: linear-gradient(#fff, #000);
-}
+body { background: url(../img/circuit-tesselate-bw.jpg); }
 
 #slideshow {
-    background: url(../img/hack_illi.jpg) no-repeat center;
-    border: 1em solid hsla(0, 0%, 100%, 0.5);
-    /* background-image: "../img/hack_illi.jpg"; */
+    background: url(../img/hack_illi.jpg) no-repeat;
+    background-size: cover;
     background-clip: padding-box;
+    border: 1em solid hsla(0, 0%, 100%, 0.5);
+    margin: auto;
+    height: 40em;
 }
 
-#slideshow-inner {
-    background: hsla(0, 0%, 100%, 0.25);
+#slideshow-text {
+    color: white; 
     text-align: center;
-    vertical-align: middle; 
-    color: white;
-    height: 100%;
-    width: 100%; 
 }

@@ -4,7 +4,7 @@ angular.module('myHomepage', ['ngMaterial'])
 
     // Theme
     $mdThemingProvider.theme('default')
-    .primaryPalette('light-blue')
+    .primaryPalette('blue-grey')
     .accentPalette('blue')
     .warnPalette('teal')
     .backgroundPalette('grey');
