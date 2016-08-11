@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <title>Vaughn Kottler</title>
+        <title>Vaughn</title>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,7 @@
 
         <link rel="stylesheet" href="node_modules/angular-material/angular-material.css" />
         <link rel="stylesheet" href="assets/app.css" />
+        <link rel="shortcut icon" title="Go Badgers" href="img/site.png" />
 
     </head>
 
@@ -31,10 +32,24 @@
         <div>
             <div id="slideshow">
 
-                <div id="slideshow-text">
-                    <i class="material-icons">arrow_back</i>
-                    This is where I will put a quote.
-                    <i class="material-icons">arrow_forward</i>
+                <div id="slideshow-wrapper" layout="row">
+
+                    <div flex="5">
+                        <div class="arrow-wrapper" hide show-gt-md>
+                            <md-button class="button-override" onclick="updateImage('slideshow', -1)"><i class="material-icons arrow-button">chevron_left</i></md-button>
+                        </div>
+                    </div>
+
+                    <div flex="90" layout="column" layout-align="space-around center">
+                        <h1 id="slideshow-text">This is where I will put a quote.</h1>
+                        <div></div>
+                    </div>
+
+                    <div flex="5">                                       
+                        <div class="arrow-wrapper" hide show-gt-md>
+                            <md-button class="button-override" onclick="updateImage('slideshow', 1)"><i class="material-icons arrow-button">chevron_right</i></md-button>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -48,6 +63,7 @@
 
     <!-- My Scripts -->
     <script src="app.js"></script>
+    <script src="util.js"></script>
 
     </body>
 

@@ -6,18 +6,47 @@ html {
     font-family: 'Ubuntu Mono';
 }
 
-body { background: url(../img/circuit-tesselate-bw.jpg); }
+body { 
+    background: url(../img/circuit-tesselate-bw.jpg);
+    height: 4000px;
+}
 
 #slideshow {
     background: url(../img/hack_illi.jpg) no-repeat;
     background-size: cover;
-    background-clip: padding-box;
-    border: 1em solid hsla(0, 0%, 100%, 0.5);
+    background-position: center;
+    /* border: 1em solid hsla(0, 0%, 100%, 0.75); background-clip: padding-box; */
     margin: auto;
     height: 40em;
 }
 
+#slideshow-wrapper {
+    height: 100%;
+    /* position: relative; */
+}
+
 #slideshow-text {
-    color: white; 
-    text-align: center;
+    background: hsla(0, 0%, 0%, 0.75);
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    /* text-align: center; */
+}
+
+.arrow-button {
+    font-size: 400%;
+    margin: auto;
+}
+
+.button-override {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.arrow-wrapper {
+    background: hsla(0, 0%, 100%, 0.25);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0;
 }

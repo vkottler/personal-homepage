@@ -15,8 +15,6 @@ angular.module('myHomepage', ['ngMaterial'])
 
 .controller('mainController', function($scope) {
 
-    var images = [];
-
-    $scope.currImage = "img/hack_illi.jpg";
     $scope.currentNavItem = "notImplemented";
+
 });
