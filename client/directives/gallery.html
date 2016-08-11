@@ -1,0 +1,26 @@
+<div id="slideshow_behind">
+    <div id="slideshow" class="myTransition">
+        <div id="slideshow-wrapper" layout="row">
+            <div flex="5">
+                <div class="arrow-wrapper" hide show-gt-md>
+                    <md-button class="button-override" ng-click="updateImage('slideshow', -1)">
+                        <i class="material-icons arrow-button">chevron_left</i>
+                    </md-button>
+                </div>
+            </div>
+
+            <div flex="90" layout="column" layout-align="space-around center">
+                <h1 id="slideshow-text">{{current_quote}}</h1>
+                <div><!-- This is needed! --></div>
+            </div>
+
+            <div flex="5">                                       
+                <div class="arrow-wrapper" hide show-gt-md>
+                    <md-button class="button-override" ng-click="updateImage('slideshow', 1)">
+                        <i class="material-icons arrow-button">chevron_right</i>
+                    </md-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

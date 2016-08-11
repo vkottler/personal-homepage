@@ -1,0 +1,16 @@
+{
+  "name": "vaughn-personal-site",
+  "version": "0.0.1",
+  "description": "Personal homepage to play around with.",
+  "license": "MIT",
+  "main": "server.js",
+  "author": "Vaughn Kottler",
+  "repository": {
+        "type": "git",
+        "url": "https://github.com/vkottler/personal-homepage"
+    },
+  "dependencies": {
+    "body-parser": "^1.10.0",
+    "express": "^4.13.4"
+  }
+}

@@ -1,4 +1,7 @@
-angular.module('myHomepage', ['ngMaterial'])
+angular.module('myHomepage', [
+    'ngMaterial',
+    'controllers',
+    'directives'])
 
 .config(function($mdThemingProvider, $mdIconProvider) {
 

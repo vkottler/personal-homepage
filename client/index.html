@@ -21,7 +21,7 @@
 
     </head>
 
-    <body ng-app="myHomepage" ng-cloak layout="column">
+    <body ng-app="myHomepage" ng-cloak layout="column" ng-controller="mainController">
 
         <md-toolbar md-scroll-shrink ng-if="true">
             <div class="md-toolbar-tools">
@@ -29,32 +29,7 @@
             </div>
         </md-toolbar>
 
-        <div id="slideshow_behind">
-        <div id="slideshow" class="myTransition">
-            <div id="slideshow-wrapper" layout="row">
-                <div flex="5">
-                    <div class="arrow-wrapper" hide show-gt-md>
-                        <md-button class="button-override" onclick="updateImage('slideshow', -1)">
-                            <i class="material-icons arrow-button">chevron_left</i>
-                        </md-button>
-                    </div>
-                </div>
-
-                <div flex="90" layout="column" layout-align="space-around center">
-                    <h1 id="slideshow-text">This is where I will put a quote.</h1>
-                    <div><!-- This is needed! --></div>
-                </div>
-
-                <div flex="5">                                       
-                    <div class="arrow-wrapper" hide show-gt-md>
-                        <md-button class="button-override" onclick="updateImage('slideshow', 1)">
-                            <i class="material-icons arrow-button">chevron_right</i>
-                        </md-button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
+        <gallery></gallery>
 
     <!-- Dependencies -->
     <script src="node_modules/angular/angular.js"></script>
@@ -63,8 +38,14 @@
     <script src="node_modules/angular-material/angular-material.js"></script>
 
     <!-- My Scripts -->
+    <script src="module_declaration.js"></script>
     <script src="app.js"></script>
-    <script src="util.js"></script>
+
+    <!-- Controllers -->
+    <script src="controllers/gallery.js"></script>
+
+    <!-- Directives -->
+    <script src="directives/main.js"></script>
 
     </body>
 
