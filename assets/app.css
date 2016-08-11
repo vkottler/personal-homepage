@@ -20,17 +20,19 @@ body {
     height: 40em;
 }
 
-#slideshow-wrapper {
-    height: 100%;
-    /* position: relative; */
+#slideshow_behind {
+    background: url(../img/hack_illi.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
+#slideshow-wrapper { height: 100%; }
 
 #slideshow-text {
     background: hsla(0, 0%, 0%, 0.75);
     color: white;
     padding: 0.5em;
     border-radius: 0.25em;
-    /* text-align: center; */
 }
 
 .arrow-button {
@@ -38,6 +40,7 @@ body {
     margin: auto;
 }
 
+/* md-button animation will fill space */
 .button-override {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
@@ -49,4 +52,32 @@ body {
     height: 100%;
     display: flex;
     margin: 0;
+}
+
+/*
+ *
+ * Animations
+ *
+ */
+
+.transitionClear {
+    animation-name: toClear;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+
+.transitionBack {
+    animation-name: fromClear;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes toClear {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fromClear {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
