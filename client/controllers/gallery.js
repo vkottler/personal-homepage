@@ -12,6 +12,8 @@ angular.module('controllers')
     // cool function that handles transition
     $scope.updateImage = function(galleryId, direction) {
 
+        clearInterval(loopingSlideshow);
+
         var element = document.getElementById(galleryId);
         var behind = galleryId + "_behind";
         currImageIndex += direction;
@@ -32,5 +34,17 @@ angular.module('controllers')
             element.className = "transitionBack";
             element.style.opacity = "1";
         }, 750);
+
+        // restart automatic slideshow
+        setTimeout(function() {
+            loopingSlideshow = setInterval(startLoop, 3000);
+        }, 1250);
     }
+
+    function startLoop() {
+        $scope.updateImage('slideshow', 1);
+    }
+
+    var loopingSlideshow = setInterval(startLoop, 3000);
+
 });
