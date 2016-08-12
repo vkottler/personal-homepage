@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <title>Vaughn</title>
+        <title>Go Badgers</title>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,25 +25,57 @@
 
         <md-toolbar><div class="md-toolbar-tools">
 
-            <md-button class="md-fab md-mini">
+            <md-button class="md-fab md-mini md-primary">
                 <md-icon>home</md-icon>
+            </md-button>
+
+            <!-- resume -->
+            <md-button class="md-raised md-primary">
+                <md-icon>school</md-icon> / <md-icon>assignment</md-icon>
+            </md-button>
+
+            <!-- code snippets -->
+            <md-button class="md-fab md-mini md-primary">
+                <md-icon>code</md-icon>
+            </md-button>
+
+            <!-- engineering related things -->
+            <md-button class="md-fab md-mini md-primary">
+                <md-icon>build</md-icon>
+            </md-button>
+
+            <!-- videos that I have made -->
+            <md-button class="md-fab md-mini md-primary">
+                <md-icon>movie</md-icon>
+            </md-button>
+
+            <!-- Video Games / things I like / music? -->
+            <md-button class="md-fab md-mini md-primary">
+                <md-icon>videogame_asset</md-icon>
+            </md-button>
+
+            <!-- Technology -->
+            <md-button class="md-fab md-mini md-primary">
+                <md-icon>devices_other</md-icon>
             </md-button>
 
             <span flex></span>
             <h2>Welcome to Vaughn's Playground</h2>
-            <span flex></span><!-- makes sure everything past here is right-aligned -->
+            <span flex></span>
 
-            <md-button class="md-fab md-mini">
-                <md-icon>favorite_border</md-icon>
+            <!-- This could get replaced with "get in touch" or something -->
+            <md-button class="md-fab md-mini md-primary">
+                <md-icon>mail_outline</md-icon>
             </md-button>
 
-            <md-button class="md-fab md-mini">
+            <!-- help page -->
+            <md-button class="md-fab md-mini md-primary">
                 <md-icon>help_outline</md-icon>
             </md-button>
 
         </div></md-toolbar>
 
-        <gallery></gallery>
+        <vaughn-gallery></vaughn-gallery>
 
     <!-- Dependencies -->
     <script src="node_modules/angular/angular.js"></script>
