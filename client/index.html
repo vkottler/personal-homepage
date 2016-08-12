@@ -23,27 +23,22 @@
 
     <body ng-app="myHomepage" ng-cloak layout="column" ng-controller="mainController">
 
-        <!--
-        <md-toolbar md-scroll-shrink ng-if="true">
-            <div class="md-toolbar-tools">
-                <h3><span>Fuck CSS</span></h3>
-            </div>
-        </md-toolbar>
-        -->
-
         <md-toolbar><div class="md-toolbar-tools">
 
-            <md-button aria-label="Go Back">Go Back</md-button>
-    
-            <!-- md-button doesn't work well with icon font -->
+            <md-button class="md-fab md-mini">
+                <md-icon>home</md-icon>
+            </md-button>
 
-            <h2>Toolbar with Standard Buttons</h2>
             <span flex></span>
+            <h2>Welcome to Vaughn's Playground</h2>
+            <span flex></span><!-- makes sure everything past here is right-aligned -->
 
-            <md-button class="md-raised" aria-label="Learn More">Learn More</md-button>
+            <md-button class="md-fab md-mini">
+                <md-icon>favorite_border</md-icon>
+            </md-button>
 
-            <md-button class="md-fab md-mini" aria-label="Favorite">
-                <i class="material-icons">favorite</i>
+            <md-button class="md-fab md-mini">
+                <md-icon>help_outline</md-icon>
             </md-button>
 
         </div></md-toolbar>

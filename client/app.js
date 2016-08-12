@@ -12,6 +12,10 @@ angular.module('myHomepage', [
     .warnPalette('teal')
     .backgroundPalette('grey');
 
+    //$mdIconProvider
+    //  .iconSet('social', 'img/icons/sets/social-icons.svg', 24)
+    //  .defaultIconSet('img/icons/sets/core-icons.svg', 24);
+
     // Icons
 
 })
