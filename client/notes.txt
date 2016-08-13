@@ -7,7 +7,7 @@ Frontend: CSS Secrets
 
 Things to Include
 
-Books that I own
+Books that I own **
 Dynamic Resume
 Current Projects
 Things I like (Music, video games)

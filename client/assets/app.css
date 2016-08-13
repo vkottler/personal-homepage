@@ -63,31 +63,3 @@ md-content.main {
     display: flex;
     margin: 0;
 }
-
-/*
- *
- * Animations
- *
- */
-
-.transitionClear {
-    animation-name: toClear;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in;
-}
-
-.transitionBack {
-    animation-name: fromClear;
-    animation-duration: 0.25s;
-    animation-timing-function: ease-out;
-}
-
-@keyframes toClear {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
-
-@keyframes fromClear {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
