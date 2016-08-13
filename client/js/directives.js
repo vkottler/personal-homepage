@@ -10,4 +10,17 @@ angular.module('directives')
     return {
         templateUrl: 'directives/footer.html'
     }
+})
+
+.directive('galleryCards', function() {
+    return {
+        templateUrl: 'directives/gallery_cards.html',
+        controller: 'cardController'
+    }
+})
+
+.directive('vaughnCard', function() {
+    return {
+        templateUrl: 'directives/card_template.html'
+    }
 });

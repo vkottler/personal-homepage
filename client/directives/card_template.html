@@ -1,0 +1,14 @@
+<md-card-title>
+    <md-card-title-text>
+        <span class="md-headline">{{card.title}}</span>
+        <span class="md-subhead">{{card.subtitle}}</span>
+        <md-card-actions class="md-raised md-primary">
+            <md-button style="width:100%"><md-icon>{{card.buttonText}}</md-icon></md-button>
+        </md-card-actions>
+    </md-card-title-text>
+    <md-card-title-media style="padding-left: 1em">
+        <div class="md-media-md card-media" style="background: url({{card.mediaUrl}}) no-repeat; background-size: cover; background-position: center"></div>
+    </md-card-title-media>
+</md-card-title>
+
+<md-card-content>{{card.content}}</md-card-content>

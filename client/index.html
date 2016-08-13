@@ -28,7 +28,7 @@
 
     <body ng-app="myHomepage" ng-cloak layout="column">
 
-        <md-toolbar>
+        <md-toolbar md-whiteframe="3">
             <vaughn-toolbar></vaughn-toolbar>
         </md-toolbar>
 
@@ -37,7 +37,7 @@
             <br><hr md-colors="{borderColor: 'primary-600', backgroundColor: 'primary-600'}">
         </md-content>
 
-        <vaughn-footer></vaughn-footer>
+        <vaughn-footer hide show-gt-xs></vaughn-footer>
 
     <!-- Dependencies -->
     <script src="node_modules/angular/angular.min.js"></script>
@@ -53,6 +53,7 @@
 
     <!-- Controllers -->
     <script src="controllers/gallery.js"></script>
+    <script src="controllers/card.js"></script>
 
     </body>
 

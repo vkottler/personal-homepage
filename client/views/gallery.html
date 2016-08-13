@@ -4,7 +4,7 @@
             <div flex="5">
                 <div class="arrow-wrapper" hide show-gt-md>
                     <md-button class="button-override" ng-click="updateImage('slideshow', -1)">
-                        <i class="material-icons arrow-button">chevron_left</i>
+                        <i class="material-icons arrow-button" md-colors="{color: 'primary-50'}">chevron_left</i>
                     </md-button>
                 </div>
             </div>
@@ -17,7 +17,7 @@
             <div flex="5">                                       
                 <div class="arrow-wrapper" hide show-gt-md>
                     <md-button class="button-override" ng-click="updateImage('slideshow', 1)">
-                        <i class="material-icons arrow-button">chevron_right</i>
+                        <i class="material-icons arrow-button" md-colors="{color: 'primary-50'}">chevron_right</i>
                     </md-button>
                 </div>
             </div>
@@ -25,12 +25,6 @@
     </div>
 </div>
 
-<hr md-colors="{borderColor: 'primary-600', backgroundColor: 'primary-600'}">
+<hr md-colors="{borderColor: 'primary-600', backgroundColor: 'primary-600'}"><br>
 
-<br>
-
-<div md-whiteframe="12" md-colors="{background: 'primary-50-0.90'}" class="body_frame">
-    <div md-colors="{color: 'primary-700', borderColor: 'primary-900'}">
-        <span>Hello!</span>
-    </div>
-</div>
+<gallery-cards></gallery-cards>

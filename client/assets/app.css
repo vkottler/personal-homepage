@@ -4,13 +4,11 @@ md-content.main {
 }
 
 .body_frame {
-    max-width: 90%;
+    max-width: max-content;
     text-align: center;
     margin: auto;
-    padding: 0.5em;
-    font-size: 400%;
-    border-radius: 0.25em;
-    height: 600px;
+    padding: 2em;
+    border-radius: 1em;
 }
 
 #slideshow {
