@@ -1,19 +1,16 @@
-html {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.monoFont {
-    font-family: 'Ubuntu Mono';
-}
-
-body { 
-    background: url(../img/circuit-tesselate-bw.jpg);
-    overflow: hidden; /* for scrollable navbar */
-}
-
 md-content.main {
     background: url(../img/circuit-tesselate-bw.jpg);
     overflow-x: hidden;
+}
+
+.body_frame {
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+    padding: 0.5em;
+    font-size: 400%;
+    border-radius: 0.25em;
+    height: 600px;
 }
 
 #slideshow {
@@ -27,6 +24,7 @@ md-content.main {
 
 #slideshow_behind {
     background: url(../img/hack_illi.jpg) no-repeat;
+    background-color: black;
     background-size: cover;
     background-position: center;
 }
