@@ -23,59 +23,25 @@
 
     <body ng-app="myHomepage" ng-cloak layout="column" ng-controller="mainController">
 
-        <md-toolbar><div class="md-toolbar-tools">
+        <md-toolbar md-scroll-shrink>
+            <vaughn-toolbar></vaughn-toolbar>
+        </md-toolbar>
 
-            <md-button class="md-fab md-mini md-primary">
-                <md-icon>home</md-icon>
-            </md-button>
+        <md-content class="main">
+            <vaughn-gallery></vaughn-gallery>
 
-            <!-- resume -->
-            <md-button class="md-raised md-primary">
-                <md-icon>school</md-icon> / <md-icon>assignment</md-icon>
-            </md-button>
-
-            <!-- code snippets -->
-            <md-button class="md-fab md-mini md-primary">
-                <md-icon>code</md-icon>
-            </md-button>
-
-            <!-- engineering related things -->
-            <md-button class="md-fab md-mini md-primary">
-                <md-icon>build</md-icon>
-            </md-button>
-
-            <!-- videos that I have made -->
-            <md-button class="md-fab md-mini md-primary">
-                <md-icon>movie</md-icon>
-            </md-button>
-
-            <!-- Video Games / things I like / music? -->
-            <md-button class="md-fab md-mini md-primary">
-                <md-icon>videogame_asset</md-icon>
-            </md-button>
-
-            <!-- Technology -->
-            <md-button class="md-fab md-mini md-primary">
-                <md-icon>devices_other</md-icon>
-            </md-button>
-
-            <span flex></span>
-            <h2>Welcome to Vaughn's Playground</h2>
-            <span flex></span>
-
-            <!-- This could get replaced with "get in touch" or something -->
-            <md-button class="md-fab md-mini md-primary">
-                <md-icon>mail_outline</md-icon>
-            </md-button>
-
-            <!-- help page -->
-            <md-button class="md-fab md-mini md-primary">
-                <md-icon>help_outline</md-icon>
-            </md-button>
-
-        </div></md-toolbar>
-
-        <vaughn-gallery></vaughn-gallery>
+        <p style="opacity: 0">
+            a<br>b<br>c<br>d<br>e<br>f<br>g<br>h<br>i
+            a<br>b<br>c<br>d<br>e<br>f<br>g<br>h<br>i
+            a<br>b<br>c<br>d<br>e<br>f<br>g<br>h<br>i
+            a<br>b<br>c<br>d<br>e<br>f<br>g<br>h<br>i
+            a<br>b<br>c<br>d<br>e<br>f<br>g<br>h<br>i
+            a<br>b<br>c<br>d<br>e<br>f<br>g<br>h<br>i
+            a<br>b<br>c<br>d<br>e<br>f<br>g<br>h<br>i
+            a<br>b<br>c<br>d<br>e<br>f<br>g<br>h<br>i
+            a<br>b<br>c<br>d<br>e<br>f<br>g<br>h<br>i
+        </p>
+        </md-content>
 
     <!-- Dependencies -->
     <script src="node_modules/angular/angular.js"></script>

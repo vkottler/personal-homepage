@@ -8,7 +8,12 @@ html {
 
 body { 
     background: url(../img/circuit-tesselate-bw.jpg);
-    height: 4000px;
+    overflow: hidden; /* for scrollable navbar */
+}
+
+md-content.main {
+    background: url(../img/circuit-tesselate-bw.jpg);
+    overflow-x: hidden;
 }
 
 #slideshow {
@@ -33,6 +38,11 @@ body {
     color: white;
     padding: 0.5em;
     border-radius: 0.25em;
+}
+
+#navbar {
+    position: fixed;
+    z-index: 1;
 }
 
 .arrow-button {

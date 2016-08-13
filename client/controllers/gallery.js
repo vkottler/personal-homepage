@@ -2,8 +2,23 @@ angular.module('controllers')
 
 .controller('galleryController', function($scope) {
 
-    var quotes = ["asdf1", "asdf2", "asdf3", "asdf4", "asdf5"];
-    var images = ["img/hack_illi.jpg", "img/presentation1.jpg", "img/presentation2.jpg", "img/presentation3.jpg", "img/presentation4.jpg"];
+    var loopDuration = 5000;
+
+    var quotes = [
+        "Technology is my passion . . .",
+        "understanding the gritty details is my obsession . . .",
+        "solving real human problems is my motivation . . .",
+        "and a collective love for computing is my dream.",
+        "Click <a href=\"https://github.com/vkottler/personal-homepage\" target=\"_newtab\">here</a> to see this site's source code!"
+    ];
+
+    var images = [
+        "img/hack_illi.jpg",
+        "img/presentation1.jpg",
+        "img/presentation2.jpg",
+        "img/presentation3.jpg",
+        "img/presentation4.jpg"
+    ];
     
     var currImageIndex = 0;
     var currImage = images[currImageIndex];
@@ -37,7 +52,7 @@ angular.module('controllers')
 
         // restart automatic slideshow
         setTimeout(function() {
-            loopingSlideshow = setInterval(startLoop, 3000);
+            loopingSlideshow = setInterval(startLoop, loopDuration);
         }, 1250);
     }
 
@@ -45,6 +60,6 @@ angular.module('controllers')
         $scope.updateImage('slideshow', 1);
     }
 
-    var loopingSlideshow = setInterval(startLoop, 3000);
+    var loopingSlideshow = setInterval(startLoop, loopDuration);
 
 });
