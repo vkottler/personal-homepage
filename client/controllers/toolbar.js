@@ -5,6 +5,7 @@ angular.module('controllers')
     function TButton(icons, text, standard) {
         this.icons = icons;
         this.text = text;
+        this.showTooltip = true;
 
         this.icons.length > 1 ? this.separator = " / " : this.separator = "";
 
@@ -12,6 +13,10 @@ angular.module('controllers')
 
         this.checkLastElement = function(item) {
             return icons[icons.length - 1].text === item.text;
+        }
+
+        this.setClass = function(newClass) {
+            this.class = newClass;
         }
     }
 
@@ -34,5 +39,23 @@ angular.module('controllers')
         new TButton([new Icon("mail_outline")], "Get in touch!"),
         new TButton([new Icon("help_outline")], "Confused?")
     ];
+
+    // need new button objects
+    $scope.fabBar = [];
+    for (var i = 0; i < $scope.beforeText.length; i++) {
+        var button = new TButton($scope.beforeText[i].icons, $scope.beforeText[i].text);
+        button.setClass("md-icon-button md-raised md-primary");
+        button.showTooltip = false;
+        button.checkLastElement = function() { return true; }
+        button.icons = [button.icons[0]];
+        $scope.fabBar.push(button);
+    }
+
+    for (var i = 0; i < $scope.afterText.length; i++) {
+        var button = new TButton($scope.afterText[i].icons, $scope.afterText[i].text);
+        button.setClass("md-icon-button md-raised md-primary");
+        button.showTooltip = false;
+        $scope.fabBar.push(button);
+    }
 
 });

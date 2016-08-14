@@ -1,15 +1,37 @@
-<div class="md-toolbar-tools" md-colors="{color: 'primary-50'}">
+<md-toolbar md-whiteframe="3" hide show-gt-sm>
+    <div class="md-toolbar-tools" md-colors="{color: 'primary-50'}"><!-- 960 is as small as it can go -->
 
-    <div ng-repeat="vaughnButton in beforeText">
-        <vaughn-button-inner></vaughn-button-inner>
+        <div ng-repeat="vaughnButton in beforeText">
+            <vaughn-button-inner></vaughn-button-inner>
+        </div>
+
+        <span hide show-gt-sm flex></span>
+        <h2>Welcome to Vaughn's Playground</h2>
+        <span hide show-gt-sm flex></span>
+
+        <div ng-repeat="vaughnButton in afterText">
+            <vaughn-button-inner></vaughn-button-inner>
+        </div>
+
     </div>
+</md-toolbar>
 
-    <span flex></span>
-    <h2>Welcome to Vaughn's Playground</h2>
-    <span flex></span>
+<div md-whiteframe="3" hide-gt-sm md-colors="{backgroundColor: 'primary-600'}">
+    <md-fab-toolbar  md-open="closed" count="3" md-direction="left">
 
-    <div ng-repeat="vaughnButton in afterText">
-        <vaughn-button-inner></vaughn-button-inner>
-    </div>
+        <md-fab-trigger>
+            <md-button class="md-fab md-primary md-raised">
+                <md-icon>menu</md-icon>
+            </md-button>
+        </md-fab-trigger>
 
+        <md-toolbar>
+            <md-fab-actions class="md-toolbar-tools">
+                <div ng-repeat="vaughnButton in fabBar">
+                    <vaughn-button-inner></vaughn-button-inner>
+                </div>
+            </md-fab-actions>
+        </md-toolbar>
+        
+    </md-fab-toolbar>
 </div>

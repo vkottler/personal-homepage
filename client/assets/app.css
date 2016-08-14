@@ -15,9 +15,8 @@ md-content.main {
     background: url(../img/hack_illi.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    /* border: 1em solid hsla(0, 0%, 100%, 0.75); background-clip: padding-box; */
     margin: auto;
-    height: 40em;
+    height: 35em;
 }
 
 #slideshow_behind {
@@ -58,4 +57,8 @@ md-content.main {
     height: 100%;
     display: flex;
     margin: 0;
+}
+
+.dynamic-toolbar {
+    height: min-content;
 }
