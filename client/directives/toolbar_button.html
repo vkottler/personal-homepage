@@ -1,0 +1,6 @@
+<md-button aria-label="{{icon.text}}" class="{{vaughnButton.class}}">
+    <span ng-repeat="icon in vaughnButton.icons">
+        <md-icon >{{icon.text}}</md-icon><span ng-if="!vaughnButton.checkLastElement(icon)">{{vaughnButton.separator}}</span>
+    </span>
+    <md-tooltip md-direction="bottom">{{vaughnButton.text}}</md-tooltip>
+</md-button>

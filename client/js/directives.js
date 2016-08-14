@@ -2,7 +2,8 @@ angular.module('directives')
 
 .directive('vaughnToolbar', function() {
     return {
-        templateUrl: 'directives/toolbar.html'
+        templateUrl: 'directives/toolbar.html',
+        controller: 'toolbarController'
     }
 })
 
@@ -22,5 +23,11 @@ angular.module('directives')
 .directive('vaughnCard', function() {
     return {
         templateUrl: 'directives/card_template.html'
+    }
+})
+
+.directive('vaughnButtonInner', function() {
+    return {
+        templateUrl: 'directives/toolbar_button.html'
     }
 });
