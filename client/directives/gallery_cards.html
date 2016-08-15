@@ -1,7 +1,14 @@
-<div md-whiteframe="12" md-colors="{background: 'primary-50-0.90', color: 'primary-700'}" class="body_frame" layout="column" layout-align="space-around center">
-    <div layout="column" layout-gt-md="row" ng-repeat="cards in allCards">
+<div md-whiteframe="12"
+     md-colors="{background: 'primary-50-0.90', color: 'primary-700'}"
+     class="body_frame" layout="column" layout-align="space-around center">
+
+    <div layout="column" layout-gt-md="row"
+         layout-align="space-around center" ng-repeat="cards in allCards">
+
         <md-card ng-repeat="card in cards" style="min-width: 350px">
             <vaughn-card></vaughn-card>
         </md-card>
+
     </div>
+
 </div>
