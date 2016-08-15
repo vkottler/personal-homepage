@@ -4,7 +4,8 @@ md-content.main {
 }
 
 .body_frame {
-    max-width: max-content;
+    /* max-width: max-content; */
+    max-width: 95%;
     text-align: center;
     margin: auto;
     padding: 2em;
