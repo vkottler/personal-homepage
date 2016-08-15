@@ -1,6 +1,11 @@
-<md-button aria-label="{{icon.text}}" class="{{vaughnButton.class}}">
-    <span ng-repeat="icon in vaughnButton.icons">
-        <md-icon >{{icon.text}}</md-icon><span ng-if="!vaughnButton.checkLastElement(icon)">{{vaughnButton.separator}}</span>
+<md-button aria-label="{{vaughnButton.text}}" class="{{vaughnButton.class}}">
+
+    
+    <span ng-repeat="icon in vaughnButton.iconSet.icons">
+        <md-icon >{{icon.text}}</md-icon><span ng-if="!vaughnButton.iconSet.checkLastElement(icon)">{{vaughnButton.iconSet.separator}}</span>
     </span>
+    
+
     <md-tooltip ng-if="vaughnButton.showTooltip" md-direction="bottom">{{vaughnButton.text}}</md-tooltip>
+
 </md-button>
