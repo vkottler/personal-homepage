@@ -5,7 +5,7 @@
         <md-card-actions class="md-raised md-primary">
             <md-button style="width:100%" aria-label="{{card.title}}">
                 <span ng-repeat="icon in card.iconSet.icons">
-                    <md-icon>{{icon.text}}</md-icon><span ng-if="!card.iconSet.checkLastElement(icon)">{{card.iconSet.separator}}</span>
+                    <md-icon>{{icon.text}}</md-icon><span ng-if="!card.iconSet.checkLastElement(icon)"> / </span>
                 </span>
             </md-button>
         </md-card-actions>
