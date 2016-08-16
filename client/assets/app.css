@@ -42,23 +42,12 @@ md-content.main {
     z-index: 1;
 }
 
-.arrow-button {
-    font-size: 400%;
-    margin: auto;
-}
-
-/* md-button animation will fill space */
-.button-override {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-}
-
 .arrow-wrapper {
     background: hsla(0, 0%, 100%, 0.25);
     width: 100%;
     height: 100%;
-    display: flex;
-    margin: 0;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .dynamic-toolbar {

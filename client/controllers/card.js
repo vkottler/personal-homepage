@@ -61,11 +61,13 @@ angular.module('controllers')
                             new IconSet(["help"]), "img/stack.png", 
                             "Where am I? What is this page?", "Confused?");
     
+    // Card Variables
     $scope.cards1 = [schoolCard, codeCard, engineeringCard];
     $scope.cards2 = [videoCard, hobbyCard, techCard];
     $scope.cards3 = [contactCard, bookCard, helpCard];
     $scope.allCards = [$scope.cards1, $scope.cards2, $scope.cards3];
 
+    // Toolbar variables
     $scope.beforeText = [home, schoolCard, codeCard, engineeringCard, videoCard, hobbyCard, techCard, bookCard];
     $scope.afterText = [contactCard, helpCard];
     $scope.allButtons = $scope.beforeText.concat($scope.afterText);
