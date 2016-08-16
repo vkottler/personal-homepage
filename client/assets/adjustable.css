@@ -1,15 +1,24 @@
 @media (max-width: 600px) {
     #slideshow { font-size: 50%; }
+    .card-container { max-width: 100%; }
 }
 
 @media (min-width: 601px) and (max-width: 960px) {
     #slideshow { font-size: 75%; }
+    .card-container { max-width: 90%; }
 }
 
 @media (min-width: 961px) and (max-width: 1280px) {
     #slideshow { font-size: 100%; }
+    .card-container { max-width: 85%; }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1281px) and (max-width: 1600px) {
     #slideshow { font-size: 125%; }
+    .card-container { max-width: 80%; }
+}
+
+@media (min-width: 1601px) {
+    #slideshow { font-size: 125%; }
+    .card-container { max-width: 75%; }
 }

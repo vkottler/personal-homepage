@@ -4,10 +4,7 @@ md-content.main {
 }
 
 .body_frame {
-    display: inline-block;
-    width: fit-content;
     text-align: center;
-    margin: auto;
     padding: 2em;
     border-radius: 1em;
 }
