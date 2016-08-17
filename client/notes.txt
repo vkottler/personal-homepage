@@ -21,5 +21,15 @@ Resume
 
 Current Projects / Code Showcase
 
+Quotes:
 
+"When you grow up you tend to get told the world is the way it is [...] Try not to bash into the walls too much.
+Try to have a nice family, have fun, save a little money. That's a very limited life. Life can be much broader once
+you discover one simple fact: Everything around you that you call life was made up by people that were no smarter than
+you and you can change it, you can influence it, you can build your own things that other people can use.
 
+Once you learn that you'll never be the same again." - Steve Jobs [Jobs 2011]
+
+T-shaped person: "People who are both generalists (highly skilled at a broad set of valuable things--the top of the T)
+and also experts (among the best in their field withing a narrow discipline--the vertical let of the T)." - Valve handbook for new 
+employees
