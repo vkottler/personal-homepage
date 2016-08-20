@@ -38,7 +38,7 @@ angular.module('controllers')
                                    "Hardware projects I have worked on.", "Hardware Projects");
 
     var videoCard = new Card("Videos", "My YouTube Channel", 
-                             new IconSet(["movie"]), "img/yt.png", 
+                             new IconSet(["video_library"]), "img/yt.png", 
                              "Content I have produced, more on the way!", "Videos");
 
     var hobbyCard = new Card("Hobbies", "Things I like!", 
@@ -49,23 +49,23 @@ angular.module('controllers')
                             new IconSet(["devices_other"]), "img/logitech.png", 
                             "The secret to productivity, in my opinion!", "Favorite Tech");
 
-    var contactCard = new Card("Contact Me", "", 
+    var contactCard = new Card("Contact Me", "Let's collaborate!", 
                                new IconSet(["mail"]), "img/office.jpg", 
-                               "Let's get in touch!", "Get in touch!");
+                               "Ways to get in touch with me.", "Contact Me");
 
     var bookCard = new Card("Books I Use", "So much to learn, so little time", 
                             new IconSet(["book"]), "img/css.jpg", 
                             "My secret to learning and DIY", "Books I Like");
 
-    var helpCard = new Card("Need help?", "", 
-                            new IconSet(["help"]), "img/stack.png", 
-                            "Where am I? What is this page?", "Confused?");
+    var helpCard = new Card("My Tutorials", "Feedback encouraged!", 
+                            new IconSet(["forum"]), "img/stack.png", 
+                            "Helpful videos & guides I have created to help fellow programmers.", "Tutorials");
 
     $scope.allCards2 = [schoolCard, codeCard, engineeringCard, videoCard, hobbyCard, techCard, bookCard, contactCard, helpCard];
 
     // Toolbar variables
-    $scope.beforeText = [home, schoolCard, codeCard, engineeringCard, videoCard, hobbyCard, techCard, bookCard];
-    $scope.afterText = [contactCard, helpCard];
+    $scope.beforeText = [home, schoolCard, codeCard, engineeringCard, contactCard, helpCard];
+    $scope.afterText = [videoCard, hobbyCard, techCard, bookCard];
     $scope.allButtons = $scope.beforeText.concat($scope.afterText);
 
 });

@@ -3,7 +3,7 @@
         <span class="md-headline">{{card.title}}</span>
         <span class="md-subhead">{{card.subtitle}}</span>
         <md-card-actions class="md-raised md-primary">
-            <md-button style="width:100%" aria-label="{{card.title}}">
+            <md-button style="width:100%" aria-label="{{card.title}}" md-whiteframe="1">
                 <span ng-repeat="icon in card.iconSet.icons">
                     <md-icon>{{icon.text}}</md-icon><span ng-if="!card.iconSet.checkLastElement(icon)"> / </span>
                 </span>
