@@ -52,6 +52,7 @@ angular.module('controllers')
         clearInterval(loopingSlideshow);
 
         var element = document.getElementById(galleryId);
+
         var behind = galleryId + "_behind";
         currImageIndex += direction;
         currQuoteIndex += direction;

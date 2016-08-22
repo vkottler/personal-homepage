@@ -9,6 +9,12 @@ md-content.main {
     border-radius: 1em;
 }
 
+.page_content {
+    width: 85%;
+    margin: auto;
+    min-height: 75vh;
+}
+
 #slideshow {
     background: url(../img/hack_illi.jpg) no-repeat;
     background-size: cover;

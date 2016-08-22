@@ -1,9 +1,6 @@
-<md-button aria-label="{{vaughnButton.text}}" class="{{vaughnButton.class}}">
-    
+<md-button aria-label="{{vaughnButton.text}}" class="{{vaughnButton.class}}" ng-click="vaughnButton.clickFunction()">
     <span ng-repeat="icon in vaughnButton.iconSet.icons">
         <md-icon >{{icon.text}}</md-icon><span ng-if="!vaughnButton.iconSet.checkLastElement(icon)"> / </span>
     </span>
-
     <md-tooltip md-direction="bottom">{{vaughnButton.text}}</md-tooltip>
-
 </md-button>
