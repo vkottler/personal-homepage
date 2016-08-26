@@ -4,7 +4,7 @@ angular.module('myHomepage', [
     'controllers',
     'directives'])
 
-.config(function($routeProvider, $mdThemingProvider, $mdIconProvider) {
+.config(function($routeProvider, $mdThemingProvider, $mdIconProvider, $sceDelegateProvider) {
 
     // Theme
     $mdThemingProvider.theme('default')
@@ -58,6 +58,9 @@ angular.module('myHomepage', [
         templateUrl: 'views/tutorials.html'
     })
 
-    .otherwise({ redirectTo: '/home' })
+    .otherwise({ redirectTo: '/home' });
+
+    // I don't know why I need this
+    $sceDelegateProvider.resourceUrlWhitelist(['self', 'https://www.youtube.com/**']);
 
 });

@@ -36,4 +36,11 @@ angular.module('directives')
     return {
         templateUrl: 'directives/toolbar_fab.html'
     }
+})
+
+.directive('youtubeTesting', function() {
+    return {
+        templateUrl: 'directives/youtube.html',
+        controller: 'ytController'
+    }
 });

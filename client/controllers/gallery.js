@@ -63,25 +63,28 @@ angular.module('controllers')
         if (currQuoteIndex < 0) currQuoteIndex = quotes.length - 1;
         else if (currQuoteIndex == quotes.length) currQuoteIndex = 0;
 
-        element.className = "";
-        document.getElementById(behind).style.backgroundImage = "url(" + images[currImageIndex] + ")";
-        element.className = "transitionClear";
+        try {
+            element.className = "";
+            document.getElementById(behind).style.backgroundImage = "url(" + images[currImageIndex] + ")";
+            element.className = "transitionClear";
 
-        setTimeout(function() {
-            element.style.opacity = "0";
-            element.style.backgroundImage = "url(" + images[currImageIndex] + ")";
-            document.getElementById(galleryId + "-text").innerHTML = quotes[currQuoteIndex];
-        }, 500);
+            setTimeout(function() {
+                element.style.opacity = "0";
+                element.style.backgroundImage = "url(" + images[currImageIndex] + ")";
+                document.getElementById(galleryId + "-text").innerHTML = quotes[currQuoteIndex];
+            }, 500);
 
-        setTimeout(function() {
-            element.className = "transitionBack";
-            element.style.opacity = "1";
-        }, 750);
+            setTimeout(function() {
+                element.className = "transitionBack";
+                element.style.opacity = "1";
+            }, 750);
+        
+            // restart automatic slideshow
+            setTimeout(function() {
+                loopingSlideshow = setInterval(startLoop, loopDuration);
+            }, 1250);
 
-        // restart automatic slideshow
-        setTimeout(function() {
-            loopingSlideshow = setInterval(startLoop, loopDuration);
-        }, 1250);
+        } catch (err) { console.log('Page navigation caused an error with slideshow.'); }
     }
 
     function startLoop() {
