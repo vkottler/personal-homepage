@@ -3,7 +3,7 @@ angular.module('directives')
 .directive('vaughnToolbar', function() {
     return {
         templateUrl: 'directives/toolbar.html',
-        controller: 'cardController'
+        controller: 'toolbarController'
     }
 })
 
@@ -35,12 +35,5 @@ angular.module('directives')
 .directive('vaughnFabToolbar', function() {
     return {
         templateUrl: 'directives/toolbar_fab.html'
-    }
-})
-
-.directive('youtubeTesting', function() {
-    return {
-        templateUrl: 'directives/youtube.html',
-        controller: 'ytController'
     }
 });

@@ -34,10 +34,6 @@ angular.module('myHomepage', [
         templateUrl: 'views/engineering.html'
     })
 
-    .when('/videos', {
-        templateUrl: 'views/videos.html'
-    })
-
     .when('/hobbies', {
         templateUrl: 'views/hobbies.html'
     })

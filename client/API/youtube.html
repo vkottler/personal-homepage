@@ -1,0 +1,26 @@
+<div layout="column" layout-align="center center" md-whiteframe="6" style="background-color: white">
+
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2>YouTube Videos</h2>
+    </div>
+  </md-toolbar>
+
+  <div style="padding: 0 15px; width: 100%">
+    <div ng-repeat="id in videoIds" style="margin: 0.5em" layout="column">
+        <iframe 
+            ng-src="{{getUrl(id)}}" 
+            allowfullscreen="allowfullscreen"
+            frameborder="0"
+            md-whiteframe="3">
+        </iframe>
+    </div>
+  </div>
+
+  <div layout="row" style="width:100%">
+    <md-button flex class="md-primary" ng-click="closePanel('youtube')">
+      Close
+    </md-button>
+  </div>
+
+</div>

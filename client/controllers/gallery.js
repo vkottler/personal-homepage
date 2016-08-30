@@ -1,6 +1,11 @@
 angular.module('controllers')
 
 .controller('galleryController', function($scope) {
+
+    // we need to do this because the controller reloads 
+    // when you switch away from it and switch back to it
+    clearInterval(loopingSlideshow);
+
     var loopDuration = 6000;
     var currImageIndex = 0;
     var currQuoteIndex = 0;
