@@ -47,7 +47,8 @@ angular.module('myHomepage', [
     })
 
     .when('/books', {
-        templateUrl: 'views/books.html'
+        templateUrl: 'views/books.html',
+        controller: 'bookController'
     })
 
     .when('/tutorials', {
