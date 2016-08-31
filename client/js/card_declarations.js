@@ -60,7 +60,7 @@ var contactCard = new Card("Contact Me", "Let's collaborate!",
     function() { window.location = "#/contact"; });
 
 var bookCard = new Card("Books I Use", "So much to learn, so little time", 
-    new IconSet(["book"]), "img/css.jpg", 
+    new IconSet(["book"]), "img/books/css.jpg", 
     "My secret to learning and DIY", "Books I Like",
     function() { window.location = "#/books"; });
 
