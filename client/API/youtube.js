@@ -12,6 +12,8 @@ angular.module('controllers')
     var playlistUrl = "https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=50&key=";
     playlistUrl += myAPIkey + "&playlistId="
 
+    $scope.loaded = false;
+
     $http({ method: 'GET', url: channelUrl})
     .then(function successCallback(response1) {
         var playlistIds = response1.data.items[0].contentDetails.relatedPlaylists;
@@ -24,6 +26,7 @@ angular.module('controllers')
             $scope.videoIds = [];
             for (var i = 0; i < $scope.videos.length; i++) 
                 $scope.videoIds.push($scope.videos[i].contentDetails.videoId);
+            $scope.loaded = true;
         }, function errorCallback(response2) { console.log('Failed to retrieve videos from playlist.'); });
     }, function errorCallback(response1) { console.log('Failed to retrieve channel metadata.'); });
 
