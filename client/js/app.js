@@ -22,10 +22,6 @@ angular.module('myHomepage', [
         controller: 'galleryController'
     })
 
-    .when('/school', {
-        templateUrl: 'views/school.html'
-    })
-
     .when('/code', {
         templateUrl: 'views/code.html'
     })
@@ -40,10 +36,6 @@ angular.module('myHomepage', [
 
     .when('/technology', {
         templateUrl: 'views/technology.html'
-    })
-
-    .when('/contact', {
-        templateUrl: 'views/contact.html'
     })
 
     .when('/books', {

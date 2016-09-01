@@ -9,6 +9,14 @@ var yt_config = {
     controller: 'ytController'
 };
 
+var contact_config = {
+    templateUrl: 'views/contact.html',
+    escapeToClose: true,
+    trapFocus: true,
+    hasBackdrop: true,
+    clickOutsideToClose: true
+};
+
 // Card References
 var yt_ref = { loaded: false };
 
@@ -20,7 +28,7 @@ var home = new Card("", "",
 var schoolCard = new Card("School", "University of Wisconsin-Madison", 
     new IconSet(["school", "assignment"]), "img/uw_logo.jpg", 
     "Just over half-way through this journey.", "Classwork and Resume",
-    function() { window.location = "#/school"; });
+    function() { window.location = "/VaughnKottler-updated830.pdf"; });
 
 var codeCard = new Card("Code", "Java, C, Javascript and more", 
     new IconSet(["code"]), "img/github.png", 
@@ -44,27 +52,30 @@ var videoCard = new Card("Videos", "My YouTube Channel",
         else yt_ref.panel.show();
     });
 
-var hobbyCard = new Card("Hobbies", "Things I like!", 
-    new IconSet(["videogame_asset"]), "img/battlenet.png", 
-    "Games I play, things I do.", "Hobbies",
+var hobbyCard = new Card("Hobbies", "Things I like to do.", 
+    new IconSet(["videogame_asset", "music_note"]), "img/battlenet.png", 
+    "\"Musicians make great software developers.\"", "Hobbies",
     function() { window.location = "#/hobbies"; });
 
-var techCard = new Card("Favorite Tech", "Things I prefer to use", 
+var techCard = new Card("Favorite Tech", "Things I currently have and use.", 
     new IconSet(["devices_other"]), "img/logitech.png", 
-    "The secret to productivity, in my opinion!", "Favorite Tech",
+    "Hello, fellow enthusiasts!", "Favorite Tech",
     function() { window.location = "#/technology"; });
 
 var contactCard = new Card("Contact Me", "Let's collaborate!", 
     new IconSet(["mail"]), "img/office.jpg", 
     "Ways to get in touch with me.", "Contact Me",
-    function() { window.location = "#/contact"; });
+    function() { 
+        contact_config.position = panel.newPanelPosition().absolute().center();
+        panel.open(contact_config);
+     });
 
-var bookCard = new Card("Books I Use", "So much to learn, so little time", 
-    new IconSet(["book"]), "img/books/css.jpg", 
-    "My secret to learning and DIY", "Books I Like",
+var bookCard = new Card("Books I Use", "The secret to DIY", 
+    new IconSet(["book"]), "img/books/hello.jpg", 
+    "Learning can be fun, even if academic institutions make attempts to ruin that.", "Books I Like",
     function() { window.location = "#/books"; });
 
 var helpCard = new Card("My Tutorials", "Feedback encouraged!", 
     new IconSet(["forum"]), "img/stack.png", 
-    "Helpful videos & guides I have created to help fellow programmers.", "Tutorials",
+    "Helpful videos & guides I am working on to help fellow programmers.", "Tutorials",
     function() { window.location = "#/tutorials"; });

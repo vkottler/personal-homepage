@@ -1,8 +1,5 @@
-
 <div md-whiteframe="6" md-colors="{backgroundColor: 'primary-600'}" style="max-height: 80vh; overflow-y: auto">
-
   <h2 align="center">YouTube Videos</h2>
-
   <div layout="column" layout-align="center center" style="background-color: white">
       <div style="padding: 0 0.5em">
           <div ng-repeat="id in videoIds" style="margin: 1em" layout="column">
@@ -12,12 +9,9 @@
             </iframe>
           </div>
     </div>
-
     <md-progress-circular ng-show="!loaded" md-mode="indeterminate"></md-progress-circular>
-
     <div layout="row" style="width:100%">
         <md-button flex class="md-primary" ng-click="closePanel('youtube')">Close</md-button>
     </div>
-
   </div>
 </div>
