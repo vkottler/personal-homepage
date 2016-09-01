@@ -1,16 +1,14 @@
-<br>
-<div md-whiteframe="12"
-    md-colors="{background: 'primary-50-0.90', color: 'primary-700'}"
-    class="body_frame page_content">
-    <h1>Books!</h1>
-    <p>
-        Under construction.
-    </p>
-
-    <div ng-repeat="card in cards" style="display:inline-block; margin: 0.5em">
-        <md-card style="width:25em">
-            <vaughn-card></vaughn-card>
-        </md-card>
+<br><br>
+<div ng-repeat="bookGroup in bookGroups">
+    <div md-whiteframe="12"
+        md-colors="{background: 'primary-50-0.90', color: 'primary-700'}"
+        class="body_frame page_content_alt">
+        <h1>{{bookGroup.title}}</h1>
+        <div ng-repeat="card in bookGroup.books" style="display:inline-block; margin: 0.5em">
+            <md-card style="width:25em">
+                <vaughn-card></vaughn-card>
+            </md-card>
+        </div>
     </div>
-
+    <br><br>
 </div>

@@ -15,6 +15,11 @@ md-content.main {
     min-height: 75vh;
 }
 
+.page_content_alt {
+    width: 85%;
+    margin: auto;
+}
+
 #slideshow {
     background: url(../img/hack_illi.jpg) no-repeat;
     background-size: cover;
