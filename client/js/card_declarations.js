@@ -28,7 +28,7 @@ var home = new Card("", "",
 var schoolCard = new Card("School", "University of Wisconsin-Madison", 
     new IconSet(["school", "assignment"]), "img/uw_logo.jpg", 
     "Just over half-way through this journey.", "Classwork and Resume",
-    function() { window.location = "/VaughnKottler-updated830.pdf"; });
+    function() { window.location = "/resume.pdf"; });
 
 var codeCard = new Card("Code", "Java, C, Javascript and more", 
     new IconSet(["code"]), "img/github.png", 
