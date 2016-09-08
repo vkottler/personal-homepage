@@ -1,17 +1,19 @@
 {
-    "name": "vaughns-page",
-    "version": "0.0.1",
-    "description": "Personal homepage to play around with.",
-    "main": "app.js",
-    "author": "Vaughn Kottler",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/vkottler/personal-homepage"
-    },
-    "dependencies": {
-        "angular-animate": "^1.5.8",
-        "angular-aria": "^1.5.8",
-        "angular-route": "^1.5.8"
-    }
+  "name": "vaughns-page",
+  "version": "0.0.1",
+  "description": "Personal homepage to play around with.",
+  "main": "app.js",
+  "author": "Vaughn Kottler",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vkottler/personal-homepage"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-material": "^1.1.1",
+    "angular-route": "^1.5.8"
+  }
 }
