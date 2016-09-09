@@ -6,7 +6,12 @@ html {
     font-family: 'Ubuntu Mono';
 }
 
-body { 
+code {
+  font-size: 125%;
+  display: inline-block;
+}
+
+body {
     background: url(../img/circuit-tesselate-bw.jpg);
     overflow: hidden; /* for scrollable navbar */
 }

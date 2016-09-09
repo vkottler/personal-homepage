@@ -1,25 +1,77 @@
 <br>
 <div md-whiteframe="12"
     md-colors="{background: 'primary-50-0.90', color: 'primary-700'}"
-    class="body_frame page_content">
-    <h1>Code!</h1>
+    class="body_frame page_content" style="text-align:left">
+
+    <h1 style="text-align:center">Example 1: HTML Embedded Image Slideshow</h1>
     <p>
-        Under construction.<br>
-        <code>Example code.</code>
+      The image gallery with quotes overlaid on the home page of this site was not
+      easy to produce. CSS3 does provide an API for animations and transitions, but
+      <code><b>'background'</b></code> and its child properties are not within the scope of that
+      functionality.<br><br>
 
-        <pre class="prettyprint linenums">
+      First, let's consider that the slideshow lives in a container like this:
+      <div layout="row">
+        <div flex></div>
 
-function foo() {
-    // does something
-}
+<pre class="prettyprint"><xmp><div>
+    <!-- Slideshow Here -->
+</div></xmp></pre>
 
-function bar() {
-    // does something else
-}
+        <div flex></div>
+      </div>
+      <br>
+      <br>
+      This is intuitive, what we have to decide now is how to properly create the desired dimensions,
+      but in my case (on this site) the slideshow is actually rendered within
+      <code><b><xmp>'<div ng-view></div>'</xmp></b></code>, which is nested within a few other elements:
+      <div layout="row">
+        <div flex></div>
 
-        </pre>
-        
+<pre class="prettyprint"><xmp><body ng-app="myHomepage" ng-cloak layout="column">
+  <vaughn-toolbar></vaughn-toolbar>
+  <md-content class="main">
+    <div ng-view></div>
+    <br><hr md-colors="{borderColor: 'primary-600', backgroundColor: 'primary-600'}">
+  </md-content>
+  <vaughn-footer hide show-gt-xs></vaughn-footer>
+</body></xmp></pre>
+
+        <div flex></div>
+      </div>
+
+      <br><br>
+
+      If this seems foreign, I am using Angular.js and Angular-Material directives. Let's break it down:
+
+      <h2 style="text-align:center">
+        Custom Directive: 
+        <code><xmp><vaughn-toolbar><vaughn-toolbar></xmp></code>
+      </h2>
+
+      <div layout="row">
+        <div flex></div>
+<pre class="prettyprint"><xmp><md-toolbar md-whiteframe="3" style="overflow-x: auto; padding: 0.1em">
+  <div class="md-toolbar-tools" md-colors="{color: 'primary-50'}">
+
+    <div ng-repeat="vaughnButton in beforeText">
+      <vaughn-button-inner></vaughn-button-inner>
+    </div>
+
+    <span flex></span>
+      <h2 hide show-gt-sm>Welcome to Vaughn's Playground</h2>
+    <span flex></span>
+
+    <div ng-repeat="vaughnButton in afterText">
+      <vaughn-button-inner></vaughn-button-inner>
+    </div>
+
+</div>
+</md-toolbar></xmp></pre>
+        <div flex></di>
+      </div>
     </p>
+
     <!--
         Ideas
 
