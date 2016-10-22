@@ -5,7 +5,7 @@ express = require('express')
   , port = 8080
   , app = express()
   , bodyParser = require('body-parser')
-  , server = http.createServer(app).listen(port, 'localhost', function() {
+  , server = http.createServer(app).listen(port, function() {
     console.log('Server listening on ' + port);
   });
 
