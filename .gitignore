@@ -1,5 +1,6 @@
 **/node_modules/**
 client/codeForGood
+client/badgerloop
 OverallPodOperation.html
 OverallBlockDiagram.pdf
-
+networkBackend.html
