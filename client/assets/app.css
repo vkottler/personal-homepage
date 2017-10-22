@@ -21,7 +21,7 @@ md-content.main {
 }
 
 #slideshow {
-    background: url(../img/hack_illi.jpg) no-repeat;
+    background: url(../img/slideshow/hack_illi.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     margin: auto;
@@ -30,7 +30,7 @@ md-content.main {
 }
 
 #slideshow_behind {
-    background: url(../img/hack_illi.jpg) no-repeat;
+    background: url(../img/slideshow/hack_illi.jpg) no-repeat;
     background-color: black;
     background-size: cover;
     background-position: center;
